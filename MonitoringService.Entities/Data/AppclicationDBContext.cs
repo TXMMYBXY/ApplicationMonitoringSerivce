@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace MonitoringService.Entities;
+namespace MonitoringService.Entities.Data;
 
 public class AppclicationDBContext : DbContext
 {

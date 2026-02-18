@@ -3,3 +3,7 @@
 MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.AssemblyInfoInputs.cache
 /.idea
 /MonitoringService.Application/obj
+/MonitoringService.Application/obj
+/MonitoringService.Entities/bin
+/MonitoringService.Entities/obj
+/MonitoringService.Infrastructure/obj

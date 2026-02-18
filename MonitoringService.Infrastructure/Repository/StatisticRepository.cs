@@ -1,5 +1,6 @@
 using MonitoringService.Application.Repository;
 using MonitoringService.Entities;
+using MonitoringService.Entities.Data;
 
 namespace MonitoringService.Infrastructure.Repository;
 

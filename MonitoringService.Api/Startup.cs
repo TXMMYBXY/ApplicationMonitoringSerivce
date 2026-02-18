@@ -1,4 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using MonitoringService.Api.Configuration;
+using MonitoringService.Entities.Data;
 
 namespace MonitoringService.Api;
 
@@ -13,9 +17,15 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddControllers();
-        // services.AddDbContext<ApplicationDbContext>();
+        services.Configure<DataBaseConnectionSettings>(Configuration.GetSection("DataBaseConnectionSettings"));
 
+        var dataBaseConnectionSettings = Configuration.GetSection("DataBaseConnectionSettings").Get<DataBaseConnectionSettings>();
+        
+        services.AddControllers();
+        services.AddDbContext<AppclicationDBContext>(options =>
+        {
+            options.UseNpgsql(dataBaseConnectionSettings.ConnectionString);
+        });
         services.AddAutoMapper(typeof(Program));
 
         services.AddEndpointsApiExplorer();

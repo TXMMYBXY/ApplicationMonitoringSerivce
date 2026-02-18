@@ -6,9 +6,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abb94864-2cf8-4847-80db-ed669d4d08d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MonitoringService.Api/Configuration/DataBaseConnectionSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApplicationMonitoringService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApplicationMonitoringService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Api/MonitoringService.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Api/MonitoringService.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Api/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/bin/Debug/net9.0/MonitoringService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/bin/Debug/net9.0/MonitoringService.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/bin/Debug/net9.0/MonitoringService.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/bin/Debug/net9.0/MonitoringService.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/Debug/net9.0/MonitoringService.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/Debug/net9.0/MonitoringService.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/Debug/net9.0/MonitoringService.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/Debug/net9.0/MonitoringService.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/Debug/net9.0/MonitoringService.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/Debug/net9.0/MonitoringService.Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/Debug/net9.0/MonitoringService.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/Debug/net9.0/MonitoringService.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/MonitoringService.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/MonitoringService.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/MonitoringService.Application.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/MonitoringService.Application.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/AppclicationDBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/Data/AppclicationDBContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/MonitoringService.Entities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/MonitoringService.Entities.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/bin/Debug/net9.0/MonitoringService.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/bin/Debug/net9.0/MonitoringService.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/bin/Debug/net9.0/MonitoringService.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/bin/Debug/net9.0/MonitoringService.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/Debug/net9.0/MonitoringService.Entities.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/MonitoringService.Entities.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/MonitoringService.Entities.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/MonitoringService.Entities.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/MonitoringService.Entities.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/MonitoringService.Entities.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/MonitoringService.Entities.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Entities/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Entities/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/Repository/StatisticRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/Repository/StatisticRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/MonitoringService.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/MonitoringService.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/MonitoringService.Infrastructure.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/MonitoringService.Infrastructure.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MonitoringService.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +73,14 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ApplicationMonitoringService.Application/Service/Dto/CreateStatisticDto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ApplicationMonitoringService.Application/Service/IStatisticService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ApplicationMonitoringService.Infrastructure/Repository/StatisticRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ApplicationMonitoringService.Infrastructure/Service/StaticService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4a28847852ee9ba45fd3107526c0a749a733bd4f4ebf33aa3c9a59737a3f758/EntityFrameworkServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/94df6958aa3cbfc6952f43aaa8b4dd8963e7ff54f2ed91ebef6930b65f5275/OptionsConfigurationServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bbcfe7ab04c9c5e854e8084459eb29d1ba45cca1ecfec1ad876fafa1267/ConfigurationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MonitoringService.Api/Configuration/DataBaseConnectionSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MonitoringService.Application/Service/Dto/CreateStatisticDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MonitoringService.Application/Service/IStatisticService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MonitoringService.Infrastructure/Repository/StatisticRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MonitoringService.Infrastructure/Service/StaticService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
@@ -56,9 +102,10 @@
     &quot;.NET Launch Settings Profile.ApplicationMonitoringService.Api: http.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;CreateEndpoints&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -105,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1771334854958</updated>
       <workItem from="1771334857107" duration="4328000" />
-      <workItem from="1771413222111" duration="1105000" />
+      <workItem from="1771413222111" duration="7688000" />
     </task>
     <servers />
   </component>

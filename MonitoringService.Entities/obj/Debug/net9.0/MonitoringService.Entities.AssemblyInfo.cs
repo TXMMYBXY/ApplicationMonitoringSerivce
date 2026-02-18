@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonitoringService.Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b06b1d215a9fb4d9f99be13abed17c7d5493d92f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7428e2cec5b77231e32b454cdc4bf5078297c3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonitoringService.Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonitoringService.Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
