@@ -1,0 +1,16 @@
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\bin\Debug\net9.0\ApplicationMonitoringService.Application.deps.json
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\bin\Debug\net9.0\ApplicationMonitoringService.Application.dll
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\bin\Debug\net9.0\ApplicationMonitoringService.Application.pdb
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\bin\Debug\net9.0\ApplicationMonitoringService.Entities.dll
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\bin\Debug\net9.0\ApplicationMonitoringService.Entities.pdb
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\ApplicationMonitoringService.Application.csproj.AssemblyReference.cache
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\ApplicationMonitoringService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\ApplicationMonitoringService.Application.AssemblyInfoInputs.cache
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\ApplicationMonitoringService.Application.AssemblyInfo.cs
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\ApplicationMonitoringService.Application.csproj.CoreCompileInputs.cache
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\Applicat.1AB1DF23.Up2Date
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\ApplicationMonitoringService.Application.dll
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\refint\ApplicationMonitoringService.Application.dll
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\ApplicationMonitoringService.Application.pdb
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\ref\ApplicationMonitoringService.Application.dll
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Application\obj\Debug\net9.0\ApplicationMonitoringService.Application.sourcelink.json
