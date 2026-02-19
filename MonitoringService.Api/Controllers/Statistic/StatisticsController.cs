@@ -55,4 +55,11 @@ public class StatisticsController : ControllerBase
         
         return Ok(listDevicesViewModel);
     }
+
+    [HttpDelete("delete-statistic")]
+    public async Task DeleteStatisticByIdAsync([FromBody] DeleteStatisticViewModel  statisticViewModel)
+    {
+        var statisticId =  statisticViewModel.Id;
+        await _statisticService.DeleteStatisticByIdAsync(statisticId);
+    }
 }

@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="compose.yaml" />
+  </Folder>
   <Project Path="MonitoringService.Api/MonitoringService.Api.csproj" />
   <Project Path="MonitoringService.Application/MonitoringService.Application.csproj" />
   <Project Path="MonitoringService.Entities/MonitoringService.Entities.csproj" />
