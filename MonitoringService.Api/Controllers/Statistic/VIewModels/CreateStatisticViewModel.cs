@@ -1,12 +1,12 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace MonitoringService.Api.Controllers.VIewModels;
+namespace MonitoringService.Api.Controllers.Statistic.VIewModels;
 
-public class CreateInfoFromDeviceViewModel
+public class CreateStatisticViewModel
 {
     [JsonPropertyName("_id")]
-    public string Id { get; set; } = "";
+    public string DeviceId { get; set; } = "";
     [MaxLength(255)]
     [JsonPropertyName("name")]
     public string Name { get; set; } = "";

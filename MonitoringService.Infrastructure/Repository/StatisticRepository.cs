@@ -1,14 +1,14 @@
 using MonitoringService.Application.Repository;
 using MonitoringService.Entities;
-using MonitoringService.Entities.Data;
+using MonitoringService.Infrastructure.Data;
 
 namespace MonitoringService.Infrastructure.Repository;
 
 public class StatisticRepository : BaseRepository<Statistic>, IStatisticRepository
 {
-    private readonly AppclicationDBContext _dbContext;
+    private readonly ApplicationDbContext _dbContext;
 
-    public StatisticRepository(AppclicationDBContext dbContext)
+    public StatisticRepository(ApplicationDbContext dbContext) : base(dbContext)
     {
         _dbContext = dbContext;
     }

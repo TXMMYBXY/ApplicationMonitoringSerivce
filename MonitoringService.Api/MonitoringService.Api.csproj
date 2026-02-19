@@ -26,6 +26,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\MonitoringService.Application\MonitoringService.Application.csproj" />
+      <ProjectReference Include="..\MonitoringService.Infrastructure\MonitoringService.Infrastructure.csproj" />
     </ItemGroup>
 
 

@@ -1,11 +1,12 @@
 using System.ComponentModel.DataAnnotations;
+using MonitoringService.Entities.Base;
 
 namespace MonitoringService.Entities;
 
-public class Statistic
+public class Statistic : EntityBase
 {
     [Required]
-    public string Id { get; set; } = "";
+    public string DeviceId { get; set; } = "";
     [Required]
     [MaxLength(255)]
     public string Name { get; set; } = "";

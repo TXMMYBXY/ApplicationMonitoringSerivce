@@ -7,3 +7,4 @@ MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructu
 /MonitoringService.Entities/bin
 /MonitoringService.Entities/obj
 /MonitoringService.Infrastructure/obj
+/MonitoringService.Application/bin

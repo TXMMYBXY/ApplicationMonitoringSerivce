@@ -6,12 +6,12 @@ using MonitoringService.Entities;
 
 namespace MonitoringService.Infrastructure.Service;
 
-public class StaticService : IStatisticService
+public class StatisticService : IStatisticService
 {
     private readonly IMapper _mapper;
     private readonly IStatisticRepository _repository;
 
-    public StaticService(IMapper mapper, IStatisticRepository statistic)
+    public StatisticService(IMapper mapper, IStatisticRepository statistic)
     {
         _mapper = mapper;
         _repository = statistic;
@@ -22,5 +22,6 @@ public class StaticService : IStatisticService
         var statisticEntity = _mapper.Map<Statistic>(createStatisticDto);
         
         await  _repository.CreateStatisticAsync(statisticEntity);
+        await  _repository.SaveChangesAsync();
     }
 }

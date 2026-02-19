@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MonitoringService.Entities.Data;
+using MonitoringService.Infrastructure.Data;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace MonitoringService.Entities.Migrations
 {
-    [DbContext(typeof(AppclicationDBContext))]
-    [Migration("20260218125701_Init")]
+    [DbContext(typeof(ApplicationDbContext))]
+    [Migration("20260219043843_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -27,7 +27,14 @@ namespace MonitoringService.Entities.Migrations
 
             modelBuilder.Entity("MonitoringService.Entities.Statistic", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DeviceId")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("EndTime")

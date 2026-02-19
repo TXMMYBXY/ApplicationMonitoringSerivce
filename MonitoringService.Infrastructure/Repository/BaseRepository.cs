@@ -1,9 +1,20 @@
+using Microsoft.EntityFrameworkCore;
 using MonitoringService.Application.Repository;
+using MonitoringService.Infrastructure.Data;
 
 namespace MonitoringService.Infrastructure.Repository;
 
 public class BaseRepository<T> : IBaseRepository<T> where T : class
 {
+    protected readonly ApplicationDbContext _dbContext;
+    protected readonly DbSet<T> _dbset;
+
+    public BaseRepository(ApplicationDbContext dbContext)
+    {
+        _dbContext = dbContext;
+        _dbset = dbContext.Set<T>();
+    }
+    
     public async Task<IEnumerable<T>> GetAllAsync()
     {
         throw new NotImplementedException();
@@ -31,6 +42,6 @@ public class BaseRepository<T> : IBaseRepository<T> where T : class
 
     public async Task SaveChangesAsync()
     {
-        throw new NotImplementedException();
+        await _dbContext.SaveChangesAsync();
     }
 }
