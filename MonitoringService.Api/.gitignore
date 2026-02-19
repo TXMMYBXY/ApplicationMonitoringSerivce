@@ -3,3 +3,12 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+*.cache
+MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.AssemblyInfoInputs.cache
+/.idea
+../MonitoringService.Application/obj
+../MonitoringService.Application/bin
+../MonitoringService.Entities/bin
+../MonitoringService.Entities/obj
+../MonitoringService.Infrastructure/obj
+../MonitoringService.Infrastructure/bin

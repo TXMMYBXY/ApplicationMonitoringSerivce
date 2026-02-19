@@ -1,0 +1,10 @@
+/MonitoringService.Infrastructure/obj
+*.cache
+MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.AssemblyInfoInputs.cache
+/.idea
+/MonitoringService.Application/bin
+/MonitoringService.Application/obj
+/MonitoringService.Entities/bin
+/MonitoringService.Entities/obj
+/MonitoringService.Infrastructure/bin
+/MonitoringService.Infrastructure/obj
