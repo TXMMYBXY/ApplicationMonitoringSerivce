@@ -51,4 +51,12 @@ public class StatisticService : IStatisticService
         
         return listStatisticsDto;
     }
+
+    public async Task<IReadOnlyCollection<GetDeviceDto>> GetAllDevicesAsync()
+    {
+        var listUniqueDevices = await _statisticRepository.GetAllDevicesAsync();
+        var listDevicesDto = _mapper.Map<IReadOnlyCollection<GetDeviceDto>>(listUniqueDevices);
+
+        return listDevicesDto;
+    }
 }

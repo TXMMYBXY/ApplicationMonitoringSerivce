@@ -13,5 +13,7 @@ public class StatisticMappingProfile : Profile
         
         //Profiles for GET
         CreateMap<GetStatisticDto, GetStatisticViewModel>().ReverseMap();
+        
+        CreateMap<GetDeviceDto, GetDeviceViewModel>().ReverseMap();
     }
 }
