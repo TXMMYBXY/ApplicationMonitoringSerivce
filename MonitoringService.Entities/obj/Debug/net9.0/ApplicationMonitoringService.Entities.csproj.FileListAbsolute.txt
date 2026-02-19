@@ -1,0 +1,13 @@
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\bin\Debug\net9.0\ApplicationMonitoringService.Entities.deps.json
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\bin\Debug\net9.0\ApplicationMonitoringService.Entities.dll
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\bin\Debug\net9.0\ApplicationMonitoringService.Entities.pdb
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\ApplicationMonitoringService.Entities.csproj.AssemblyReference.cache
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\ApplicationMonitoringService.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\ApplicationMonitoringService.Entities.AssemblyInfoInputs.cache
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\ApplicationMonitoringService.Entities.AssemblyInfo.cs
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\ApplicationMonitoringService.Entities.csproj.CoreCompileInputs.cache
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\ApplicationMonitoringService.Entities.dll
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\refint\ApplicationMonitoringService.Entities.dll
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\ApplicationMonitoringService.Entities.pdb
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\ref\ApplicationMonitoringService.Entities.dll
+C:\Users\myuch\RiderProjects\ApplicationMonitoringSerivce\ApplicationMonitoringService.Entities\obj\Debug\net9.0\ApplicationMonitoringService.Entities.sourcelink.json
