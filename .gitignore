@@ -4,3 +4,9 @@ MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructu
 /.idea
 **/bin/
 **/obj/
+/MonitoringService.Application/bin
+/MonitoringService.Application/obj
+/MonitoringService.Entities/bin
+/MonitoringService.Entities/obj
+/MonitoringService.Infrastructure/bin
+/MonitoringService.Infrastructure/obj
