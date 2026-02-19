@@ -1,8 +1,8 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using MonitoringService.Api.Controllers.Statistic.VIewModels;
-using MonitoringService.Application.Service;
-using MonitoringService.Application.Service.Dto;
+using MonitoringService.Application.Service.StatisticService;
+using MonitoringService.Application.Service.StatisticService.Dto;
 
 namespace MonitoringService.Api.Controllers.Statistic;
 
@@ -27,5 +27,23 @@ public class StatisticsController : ControllerBase
         await _statisticService.CreateStatisticAsync(statisticDto);
         
         return Created();
+    }
+
+    [HttpGet("get-all-statistics")]
+    public async Task<ActionResult<IReadOnlyCollection<GetStatisticViewModel>>> GetAllStatistics()
+    {
+        var listStatisticsDto = await _statisticService.GetAllStatisticsAsync();
+        var listStatisticViewModel = _mapper.Map<IReadOnlyCollection<GetStatisticViewModel>>(listStatisticsDto);
+        
+        return Ok(listStatisticViewModel);
+    }
+
+    [HttpGet("{deviceId}/get-all-statistics-by-device")]
+    public async Task<ActionResult<IReadOnlyCollection<GetStatisticViewModel>>> GetAllStatisticsByDevice([FromRoute]string deviceId)
+    {
+        var listStatisticsDto = await _statisticService.GetStatisticsByIdAsync(deviceId);
+        var listStatisticsViewModel = _mapper.Map<IReadOnlyCollection<GetStatisticViewModel>>(listStatisticsDto);
+        
+        return Ok(listStatisticsViewModel);
     }
 }

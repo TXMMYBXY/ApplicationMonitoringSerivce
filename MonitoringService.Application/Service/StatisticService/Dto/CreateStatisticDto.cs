@@ -1,4 +1,4 @@
-namespace MonitoringService.Application.Service.Dto;
+namespace MonitoringService.Application.Service.StatisticService.Dto;
 
 public class CreateStatisticDto
 {

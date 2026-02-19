@@ -1,8 +1,12 @@
 using Microsoft.Extensions.DependencyInjection;
 using MonitoringService.Application.Repository;
+using MonitoringService.Application.Repository.Base;
 using MonitoringService.Application.Service;
+using MonitoringService.Application.Service.StatisticService;
 using MonitoringService.Infrastructure.Repository;
+using MonitoringService.Infrastructure.Repository.Base;
 using MonitoringService.Infrastructure.Service;
+using MonitoringService.Infrastructure.Service.StatisticService;
 
 namespace MonitoringService.Infrastructure;
 

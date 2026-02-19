@@ -1,4 +1,4 @@
-namespace MonitoringService.Application.Repository;
+namespace MonitoringService.Application.Repository.Base;
 
 public interface IBaseRepository<T> where T : class
 {
