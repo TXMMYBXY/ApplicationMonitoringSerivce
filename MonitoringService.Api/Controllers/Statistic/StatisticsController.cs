@@ -46,4 +46,13 @@ public class StatisticsController : ControllerBase
         
         return Ok(listStatisticsViewModel);
     }
+    
+    [HttpGet("get-all-devices")]
+    public async Task<ActionResult<IReadOnlyCollection<GetDeviceViewModel>>> GetAllDevices()
+    {
+        var listDevicesDto = await _statisticService.GetAllDevicesAsync();
+        var listDevicesViewModel = _mapper.Map<IReadOnlyCollection<GetDeviceViewModel>>(listDevicesDto);
+        
+        return Ok(listDevicesViewModel);
+    }
 }

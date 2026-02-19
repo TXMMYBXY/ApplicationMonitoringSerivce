@@ -1,3 +1,4 @@
+using System.Xml.Serialization;
 using AutoMapper;
 using MonitoringService.Application.Service.StatisticService.Dto;
 using MonitoringService.Entities;
@@ -15,5 +16,7 @@ public class StatisticMappingProfile : Profile
         
         //Profiles for GET
         CreateMap<Statistic, GetStatisticDto>().ReverseMap();
+
+        CreateMap<string, GetDeviceDto>().ForMember(dest => dest.DeviceId, opt => opt.MapFrom(src => src));
     }
 }

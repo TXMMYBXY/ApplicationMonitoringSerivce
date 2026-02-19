@@ -1,6 +1,4 @@
-/MonitoringService.Infrastructure/obj
 *.cache
-MonitoringService.Infrastructure/obj/Debug/net9.0/MonitoringService.Infrastructure.AssemblyInfoInputs.cache
 /.idea
 **/bin/
 **/obj/

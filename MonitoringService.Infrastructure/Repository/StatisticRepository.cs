@@ -1,4 +1,3 @@
-using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using MonitoringService.Application.Repository;
 using MonitoringService.Entities;
@@ -28,5 +27,13 @@ public class StatisticRepository : BaseRepository<Statistic>, IStatisticReposito
     public async Task<IEnumerable<Statistic>> GetStatisticsByIdAsync(string deviceId)
     {
         return await _dbContext.Statistics.Where(s => s.DeviceId == deviceId).ToListAsync(); 
+    }
+
+    public async Task<IEnumerable<string>> GetAllDevicesAsync()
+    {
+        return await _dbContext.Statistics
+            .Select(device => device.DeviceId)
+            .Distinct()
+            .ToListAsync();    
     }
 }

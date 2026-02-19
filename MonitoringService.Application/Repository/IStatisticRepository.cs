@@ -23,4 +23,6 @@ public interface IStatisticRepository : IBaseRepository<Statistic>
     /// <param name="deviceId">ID устройства</param>
     /// <returns>List сущностей</returns>
     Task<IEnumerable<Statistic>> GetStatisticsByIdAsync(string deviceId);
+
+    Task<IEnumerable<string>> GetAllDevicesAsync();
 }

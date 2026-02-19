@@ -20,4 +20,6 @@ public interface IStatisticService
     /// </summary>
     /// <param name="deviceId">ID устройства</param>
     Task<IReadOnlyCollection<GetStatisticDto>> GetStatisticsByIdAsync(string deviceId);
+
+    Task<IReadOnlyCollection<GetDeviceDto>> GetAllDevicesAsync();
 }
