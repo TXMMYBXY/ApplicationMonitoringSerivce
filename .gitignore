@@ -1,4 +1,27 @@
-*.cache
-/.idea
-**/bin/
-**/obj/
+## .NET
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## JetBrains Rider
+.idea/
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## VS
+.vs/
