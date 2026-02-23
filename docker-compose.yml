@@ -15,7 +15,7 @@ services:
   api:
     build:
       # контекст — папка с .NET‑решением
-      context: ./ApplicationMonitoringSerivce
+      context: .
       # Dockerfile лежит внутри этой папки, в проекте Api
       dockerfile: MonitoringService.Api/Dockerfile
     container_name: monitoring-api
@@ -36,7 +36,7 @@ services:
   client:
     build:
       # контекст — папка с React/Vite
-      context: ./application-monitoring-service
+      context: ./reactApp
       dockerfile: Dockerfile
       args:
         VITE_API_URL: ${VITE_API_URL}

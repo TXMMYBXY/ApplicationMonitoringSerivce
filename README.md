@@ -27,19 +27,20 @@
 
 ```text
 MonitoringService
-├─ .env.example              # шаблон файла окружения
-├─ .env                      # локальный файл окружения (НЕ коммитить)
-├─ docker-compose.yml        # запуск всех контейнеров
-├─ reactApp
-│  ├─ Dockerfile             # билд и ран фронта (Vite + nginx)
-│  └─ ...                    # исходники React
 └─ ApplicationMonitoringSerivce
    ├─ MonitoringService.Api
    │  ├─ Dockerfile          # билд и ран API
    │  └─ ...
    ├─ MonitoringService.Application      # Интерфейсы
    ├─ MonitoringService.Infrastructure   # DbContext + миграции EF, реализация
-   └─ MonitoringService.Entities         # Сущности, модели
+   ├─ MonitoringService.Entities         # Сущности, модели
+   ├─ reactApp
+   │  ├─ Dockerfile             # билд и ран фронта (Vite + nginx)
+   │  └─ ...                    # исходники React
+   ├─ .env.example              # шаблон файла окружения
+   ├─ .env                      # локальный файл окружения (НЕ коммитить)
+   ├─ README.md                 # этот файл
+   └─ docker-compose.yml        # запуск всех контейнеров
 ```
 
 ## Требования
@@ -65,9 +66,7 @@ MonitoringService
     ```
 4. Запустить миграции инциализации бд:
    ```bash
-   cd .\ApplicationMonitoringSerivce\
-
-   dotnet ef database update `
+     dotnet ef database update `
     -p MonitoringService.Infrastructure `
     -s MonitoringService.Api
    ```
