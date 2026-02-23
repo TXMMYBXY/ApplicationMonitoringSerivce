@@ -2,8 +2,8 @@ using System.Text.Json.Serialization;
 
 namespace MonitoringService.Api.Controllers.Statistic.VIewModels;
 
-public class GetDeviceViewModel
+public class DeleteStatisticViewModel
 {
-    [JsonPropertyName("_id")]
-    public string DeviceId { get; set; }
+    [JsonPropertyName(("id"))]
+    public int Id { get; set; }
 }

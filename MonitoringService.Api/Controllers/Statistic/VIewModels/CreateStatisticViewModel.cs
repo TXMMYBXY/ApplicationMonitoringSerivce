@@ -6,14 +6,17 @@ namespace MonitoringService.Api.Controllers.Statistic.VIewModels;
 
 public class CreateStatisticViewModel
 {
+    [Required]
     [JsonPropertyName("_id")]
     public string DeviceId { get; set; } = "";
+    [Required]
     [MaxLength(255)]
     [JsonPropertyName("name")]
     public string Name { get; set; } = "";
+    [Required]
     [JsonPropertyName("startTime")]
     public DateTime StartTime { get; set; }
-
+    [Required]
     [JsonPropertyName("endTime")]
     public DateTime EndTime
     {
@@ -28,7 +31,8 @@ public class CreateStatisticViewModel
             _endTime = value;
         }
     }
-
+    
+    [Required]
     [JsonPropertyName("version")]
     public string Version
     {

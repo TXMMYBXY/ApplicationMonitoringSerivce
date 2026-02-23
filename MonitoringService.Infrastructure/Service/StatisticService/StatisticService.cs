@@ -59,4 +59,17 @@ public class StatisticService : IStatisticService
 
         return listDevicesDto;
     }
+
+    public async Task DeleteStatisticByIdAsync(int statisticId)
+    {
+        var statisticEntity = await _statisticRepository.GetByIdAsync(statisticId);
+        
+        if(statisticEntity == null)
+            throw new NullReferenceException($"Statistic with id {statisticId} does not exist");
+        
+        _statisticRepository.Delete(statisticEntity);
+        _logger.LogInformation($"Record deleted about device to database");
+        
+        await  _statisticRepository.SaveChangesAsync();
+    }
 }

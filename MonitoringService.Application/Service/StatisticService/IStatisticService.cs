@@ -22,4 +22,5 @@ public interface IStatisticService
     Task<IReadOnlyCollection<GetStatisticDto>> GetStatisticsByIdAsync(string deviceId);
 
     Task<IReadOnlyCollection<GetDeviceDto>> GetAllDevicesAsync();
+    Task DeleteStatisticByIdAsync(int statisticId);
 }
