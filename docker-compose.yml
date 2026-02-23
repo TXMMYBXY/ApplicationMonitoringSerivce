@@ -1,0 +1,50 @@
+services:
+  db:
+    image: postgres:16
+    container_name: monitoring-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build:
+      # контекст — папка с .NET‑решением
+      context: ./ApplicationMonitoringSerivce
+      # Dockerfile лежит внутри этой папки, в проекте Api
+      dockerfile: MonitoringService.Api/Dockerfile
+    container_name: monitoring-api
+    depends_on:
+      - db
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT}
+
+      # секция DataBaseConnectionSettings
+      DataBaseConnectionSettings__Host: ${DB_HOST}
+      DataBaseConnectionSettings__Port: ${DB_PORT}
+      DataBaseConnectionSettings__DataBase: ${POSTGRES_DB}
+      DataBaseConnectionSettings__Username: ${POSTGRES_USER}
+      DataBaseConnectionSettings__Password: ${POSTGRES_PASSWORD}
+    ports:
+      - "${API_PORT}:8080"
+
+  client:
+    build:
+      # контекст — папка с React/Vite
+      context: ./application-monitoring-service
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL}
+    container_name: monitoring-client
+    depends_on:
+      - api
+    ports:
+      - "${CLIENT_PORT}:80"
+
+volumes:
+  postgres_data:

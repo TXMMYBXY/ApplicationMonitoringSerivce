@@ -1,26 +1,32 @@
-﻿FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
-USER $APP_UID
-WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
-
+﻿# =========================
+# build stage
+# =========================
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
-ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["MonitoringService.Api/MonitoringService.Api.csproj", "MonitoringService.Api/"]
-COPY ["MonitoringService.Application/MonitoringService.Application.csproj", "MonitoringService.Application/"]
-COPY ["MonitoringService.Entities/MonitoringService.Entities.csproj", "MonitoringService.Entities/"]
-COPY ["MonitoringService.Infrastructure/MonitoringService.Infrastructure.csproj", "MonitoringService.Infrastructure/"]
-RUN dotnet restore "MonitoringService.Api/MonitoringService.Api.csproj"
+
+# Копируем csproj, чтобы быстрее делать restore
+COPY MonitoringService.Api/MonitoringService.Api.csproj MonitoringService.Api/
+COPY MonitoringService.Application/MonitoringService.Application.csproj MonitoringService.Application/
+COPY MonitoringService.Infrastructure/MonitoringService.Infrastructure.csproj MonitoringService.Infrastructure/
+
+RUN dotnet restore MonitoringService.Api/MonitoringService.Api.csproj
+
+# Копируем всё backend-решение
 COPY . .
-WORKDIR "/src/MonitoringService.Api"
-RUN dotnet build "./MonitoringService.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./MonitoringService.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+WORKDIR /src/MonitoringService.Api
 
-FROM base AS final
+RUN dotnet publish MonitoringService.Api.csproj -c Release -o /app/publish /p:UseAppHost=false
+
+# =========================
+# runtime stage
+# =========================
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+
+ENV ASPNETCORE_URLS=http://+:8080
+EXPOSE 8080
+
+COPY --from=build /app/publish .
+
 ENTRYPOINT ["dotnet", "MonitoringService.Api.dll"]
